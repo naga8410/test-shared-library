@@ -1,6 +1,6 @@
 ---
 - name: server restart playbook
-  hosts: 
+  hosts: all
   vars:
     servicename: "{{ vars['servicename'] }}"
     operationname: "{{ vars['operationname'] }}"
