@@ -1,0 +1,1 @@
+//ansible-playbook -i inventory.ini playbook.yml -l ${params.HOSTNAME}  -e "servicename=${params.ServiceName} operationname=${params.actions}"

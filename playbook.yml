@@ -1,0 +1,11 @@
+---
+- name: server restart playbook
+  hosts: 
+  vars:
+    servicename: "{{ vars['servicename'] }}"
+    operationname: "{{ vars['operationname'] }}"
+  tasks:
+    - name: Print parameters
+      debug:
+        msg: "hostname={{ hostname }} servicename={{ servicename }} operationname={{ operationname }}"
+//ansible-playbook -i inventory.ini playbook.yml -l ${params.HOSTNAME}  -e "servicename=${params.ServiceName} operationname=${params.actions}"
