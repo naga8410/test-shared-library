@@ -1,1 +1,1 @@
-uat ansible_host=43.205.99.209
+uat ansible_host=13.233.238.88	
